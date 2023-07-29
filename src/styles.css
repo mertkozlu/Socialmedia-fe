@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+/* Genel stil ayarları */
+.add-user-container,
+.app-update-user {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.add-user-container form,
+.app-update-user form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-user-container label,
+.app-update-user label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-user-container input,
+.app-update-user input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Save Butonu (Yeşil) */
+.add-user-container button[type="submit"],
+.app-update-user button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-user-container button[type="submit"]:hover,
+.app-update-user button[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+/* Delete Butonları (Kırmızı) */
+.add-user-container .delete-button,
+.app-update-user .delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.add-user-container .delete-button:hover,
+.app-update-user .delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* Hata mesajları için stiller */
+.add-user-container .error-message,
+.app-update-user .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Form alanları doğrulanmadığında stiller */
+.add-user-container .ng-invalid,
+.app-update-user .ng-invalid {
+  border-color: red;
+}
+
+/* İkilendirilmiş etiketlerin stilleri */
+.add-user-container div,
+.app-update-user label {
+  margin-bottom: 15px;
+}
