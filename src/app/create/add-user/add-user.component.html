@@ -1,0 +1,16 @@
+<div class="add-user-container">
+    <form (ngSubmit)="onSubmit()" [formGroup]="addUserForm">
+      <div>
+        <label for="userName">User Name</label>
+        <input formControlName="userName" type="text" id="userName">
+      </div>
+      <div>
+        <label>
+            Password:
+            <input type="password" formControlName="password">
+          </label>
+      </div>
+      
+      <button class="button" type="submit">Save</button>
+    </form>
+  </div>

@@ -1,0 +1,18 @@
+<div class="add-user-container">
+    <table>
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>User Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of userList">
+          <td>{{ user.userId }}</td>
+          <td>{{ user.userName }}</td>
+          <td><button class="delete-button" (click)="deleteItem(user.userId)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

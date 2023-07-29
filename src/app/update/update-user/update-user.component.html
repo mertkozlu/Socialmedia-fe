@@ -1,0 +1,20 @@
+<div class="app-update-user">
+    <form [formGroup]="updateUserForm" (ngSubmit)="onSubmit()">
+      <label>
+        User ID:
+        <input type="number" formControlName="userId">
+      </label>
+      <br>
+      <label>
+        User Name:
+        <input type="text" formControlName="userName">
+      </label>
+      <br>
+      <label>
+        Password:
+        <input type="password" formControlName="password">
+      </label>
+      <br>
+      <button type="submit">Update User</button>
+    </form>
+  </div>
