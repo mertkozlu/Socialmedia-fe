@@ -1,71 +1,132 @@
-.add-user-container,
-.app-update-user {
-  max-width: 400px;
+body {
+  background-color: #ffffff; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 300px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f0f0f0;
 }
 
-.add-user-container form,
-.app-update-user form {
-  display: flex;
-  flex-direction: column;
-}
 
-.add-user-container label,
-.app-update-user label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.add-user-container input,
-.app-update-user input {
+table {
   width: 100%;
-  padding: 8px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+
+form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-.add-user-container button[type="submit"],
-.app-update-user button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #2ecc71;
+form button {
+  background-color: #3897f0; 
   color: #fff;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.add-user-container button[type="submit"]:hover,
-.app-update-user button[type="submit"]:hover {
-  background-color: #27ae60;
-}
 
-.add-user-container .delete-button,
-.app-update-user .delete-button {
-  background-color: #e74c3c;
+.delete-button {
+  background-color: #f00; 
   color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.add-user-container .delete-button:hover,
-.app-update-user .delete-button:hover {
-  background-color: #c0392b;
+
+.app-post, .app-user, .app-like, .app-comment {
+  margin-bottom: 40px;
 }
 
-.add-user-container .error-message,
-.app-update-user .error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
+.app-post th, .app-post td, .app-user th, .app-user td, .app-like th, .app-like td, .app-comment th, .app-comment td {
+  text-align: center;
 }
 
-.add-user-container .ng-invalid,
-.app-update-user .ng-invalid {
-  border-color: red;
+.app-post th, .app-user th, .app-like th, .app-comment th {
+  background-color: #fafafa; 
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.add-user-container div,
-.app-update-user label {
-  margin-bottom: 15px;
+.app-user th, .app-user td {
+  background-color: #f0f0f0; 
+}
+
+.app-like th, .app-like td {
+  background-color: #ffffff; 
+}
+
+.app-comment th, .app-comment td {
+  background-color: #d0d0d0; 
+}
+
+
+.add-user-container, .add-post, .add-like, .add-comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff; 
+}
+
+.add-user-container label, .add-post label, .add-like label, .add-comment label {
+  font-weight: bold;
+}
+
+.add-user-container input, .add-post input, .add-like input, .add-comment input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-user-container button, .add-post button, .add-like button, .add-comment button {
+  background-color: #3897f0; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.delete-button {
+  background-color: #f00; 
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }

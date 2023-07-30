@@ -1,1 +1,17 @@
-<p>update-comment works!</p>
+<div class="app-update-comment">
+  <h3>Comment Update</h3>
+    <form [formGroup]="updateCommentForm" (ngSubmit)="onSubmit()">
+      <label>
+        Comment ID:
+        <input type="number" formControlName="commentId">
+      </label>
+      <br>
+      <label>
+        Text:
+        <input type="text" formControlName="text">
+      </label>
+      <br>
+      <button type="submit">Update Post</button>
+    </form>
+  </div>
+

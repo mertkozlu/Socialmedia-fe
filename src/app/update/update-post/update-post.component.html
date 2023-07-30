@@ -1,1 +1,21 @@
-<p>update-post works!</p>
+<div class="app-update-post">
+  <h3>Post Update</h3>
+    <form [formGroup]="updatePostForm" (ngSubmit)="onSubmit()">
+      <label>
+        Post ID:
+        <input type="number" formControlName="postId">
+      </label>
+      <br>
+      <label>
+        Title :
+        <input type="text" formControlName="title">
+      </label>
+      <br>
+      <label>
+        Text:
+        <input type="text" formControlName="text">
+      </label>
+      <br>
+      <button type="submit">Update Post</button>
+    </form>
+  </div>

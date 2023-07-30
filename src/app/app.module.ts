@@ -8,7 +8,6 @@ import { AddLikeComponent } from './create/add-like/add-like.component';
 import { AddCommentComponent } from './create/add-comment/add-comment.component';
 import { AddPostComponent } from './create/add-post/add-post.component';
 import { CommentComponent } from './model/comment/comment.component';
-import { LikeComponent } from './model/like/like.component';
 import { UserComponent } from './model/user/user.component';
 import { PostComponent } from './model/post/post.component';
 import { UpdateCommentComponent } from './update/update-comment/update-comment.component';
@@ -19,6 +18,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { from } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 import { Routes } from '@angular/router';
+import { LikeComponent } from './model/like/like.component'; 
 
 const routes: Routes = [
   { path: 'add-user', component: AddUserComponent },

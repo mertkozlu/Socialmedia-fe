@@ -1,1 +1,25 @@
-<p>post works!</p>
+<div class="aapp-post">
+  <h3>Post List</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Post ID</th>
+          <th>User ID</th>
+          <th>User Name</th>
+          <th>Title</th>
+          <th>Text</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of postList">
+          <td>{{ post.postId }}</td>
+            <td>{{ post.userId }}</td>
+            <td>{{ post.userName }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.text }}</td>
+          <td><button class="delete-button" (click)="deleteItem(post.postId)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

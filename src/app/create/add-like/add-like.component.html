@@ -1,1 +1,17 @@
-<p>add-like works!</p>
+<div class="add-like">
+    <h3>Like Add</h3>
+    <form (ngSubmit)="onSubmit()" [formGroup]="addLikeForm">
+      <div>
+        <label for="userId">User ID</label>
+        <input formControlName="userId" type="number" id="userId">
+      </div>
+      <div>
+        <div>
+            <label for="postId">Post ID</label>
+            <input formControlName="postId" type="number" id="postId">
+          </div>
+      </div>
+      
+      <button class="button" type="submit">Save</button>
+    </form>
+  </div>

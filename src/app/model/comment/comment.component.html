@@ -1,1 +1,23 @@
-<p>comment works!</p>
+<div class="aapp-comment">
+  <h3>Comment List</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>comment ID</th>
+          <th>User ID</th>
+          <th>User Name</th>
+          <th>Text</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let comment of commentList">
+            <td>{{ comment.commentId }}</td>
+            <td>{{ comment.userId }}</td>
+            <td>{{ comment.userName }}</td>
+            <td>{{ comment.text }}</td>
+          <td><button class="delete-button" (click)="deleteItem(comment.commentId)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

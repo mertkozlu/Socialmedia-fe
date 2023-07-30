@@ -26,7 +26,7 @@ export class AddUserComponent implements OnInit{
   onSubmit():any {
     let createUserRequest:CreateUserRequest = new CreateUserRequest()
     createUserRequest.userName = this.addUserForm.value.userName
-    createUserRequest.password=this.addUserForm.value.password
+    createUserRequest.password = this.addUserForm.value.password
     console.log(createUserRequest)
     this.userService.addUser(createUserRequest).subscribe(data=>{
       let response:any=data

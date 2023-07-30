@@ -8,7 +8,7 @@ import { UpdateUserRequest } from 'src/app/dto/UpdateUserRequest';
   templateUrl: './update-user.component.html',
   styleUrls: ['./update-user.component.css']
 })
-export class UpdateUserComponent {
+export class UpdateUserComponent implements OnInit{
   updateUserForm!: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private userService: UserService) { }

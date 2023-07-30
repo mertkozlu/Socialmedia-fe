@@ -1,1 +1,21 @@
-<p>add-comment works!</p>
+<div class="add-comment">
+  <h3>Comment Add</h3>
+    <form (ngSubmit)="onSubmit()" [formGroup]="addCommentForm">
+      <div>
+        <label for="userId">User ID</label>
+        <input formControlName="userId" type="number" id="userId">
+      </div>
+      <div>
+        <div>
+            <label for="postId">Post ID</label>
+            <input formControlName="postId" type="number" id="postId">
+          </div>
+      </div>
+      <div>
+        <label for="text">Text</label>
+        <input formControlName="text" type="text" id="text">
+    </div>
+      
+      <button class="button" type="submit">Save</button>
+    </form>
+  </div>

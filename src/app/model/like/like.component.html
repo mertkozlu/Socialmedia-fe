@@ -1,1 +1,21 @@
-<p>like works!</p>
+<div class="app-like">
+  <h3>Like List</h3>
+    <table>
+      <thead>
+        <tr>
+         <th>Like ID</th>
+          <th>User ID</th>
+          <th>Post ID</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let like of likeList">
+          <td>{{ like.likeId }}</td>
+            <td>{{ like.userId }}</td>
+            <td>{{ like.postId }}</td>
+          <td><button class="delete-button" (click)="deleteItem(like.likeId)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
